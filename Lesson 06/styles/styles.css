@@ -1,0 +1,102 @@
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 10px 15px 0 15px;
+    background-color: rgba(25, 87, 179, 0.411)
+}
+
+a:hover {
+    color: white;
+    transition: .5s ease;
+}
+
+.logo {
+    pointer-events: visibleStroke;
+}
+
+.menu{
+    display: inline-block;
+    padding: 20px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+a:focus {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px black
+}
+
+p {
+    padding: 20px;
+    text-indent: 50px;
+    word-wrap: break-word;
+}
+
+p::first-letter {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+p::first-line {
+    font-style: italic;
+}
+
+p::selection {
+    background-color: purple;
+    color: white;
+}
+
+li:nth-child(2n) {
+    color:rgb(122, 153, 255)
+}
+
+.img {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    opacity: .5;
+    margin: auto;
+}
+
+.img:first-of-type {
+    pointer-events: none;
+}
+
+.img:hover {
+    opacity: 1;
+}
+
+.aside-bottom {
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    padding: 10px;
+}
+
+.aside-bottom_h {
+    visibility: hidden;
+}
+
+.footer {
+    height: 50px;
+    background-color: rgba(63, 0, 63, 0.76);
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+
+
