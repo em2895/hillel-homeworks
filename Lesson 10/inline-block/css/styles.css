@@ -1,0 +1,80 @@
+body {
+    background-color: purple;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.block__inside {
+    width: calc(100% - 20px);
+    min-height: 35vh;
+    margin: 0 10px;
+    background-color: rgb(101, 81, 172);
+    border: 1px solid black;
+}
+
+.block__inside p {
+    text-align: center;
+}
+
+aside {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:purple;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 580px) and (max-width: 1023px) {
+    .block {
+        width: calc(100% / 3 * 2);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    aside {
+        min-height: 70vh;
+        width: calc(100% / 3 - 24px);
+        margin: 0 10px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .block {
+        width: calc(100% / 3 * 2 - 20px);
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px;
+
+    }
+
+    .block__inside {
+        width: calc(100% / 2);
+        display: inline-block;
+        margin: 0;
+        min-height: 40vh;
+    }
+
+    aside {
+        min-height: 40vh;
+        width: calc(100% / 3 - 24px);
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .block__inside:last-child {
+        margin-left: -2px;
+    }
+
+    .block__inside:first-child {
+        margin-right: -2px;
+    }
+}
