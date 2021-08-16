@@ -1,0 +1,103 @@
+@import url(c:\Users\Emil2\OneDrive\Hillel\FE_Basic_02_06\Lesson_11_SCSS\css\reset.css);
+body {
+  background-color: purple;
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+@media screen and (min-width: 580px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+main h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 580px) {
+  main h1 {
+    width: 100%;
+  }
+}
+
+main aside {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: purple;
+}
+
+@media screen and (min-width: 580px) {
+  main aside {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main aside {
+    margin: 0 10px;
+  }
+}
+
+main .block__inside {
+  width: calc(100% - 20px);
+  min-height: 35vh;
+  margin: 0 10px;
+  background-color: #6551ac;
+  border: 1px solid black;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main .block__inside {
+    width: calc(100% / 2);
+  }
+  main .block__inside:last-child {
+    margin-left: 0;
+  }
+  main .block__inside:first-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .block {
+    width: calc(100% / 3 * 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
