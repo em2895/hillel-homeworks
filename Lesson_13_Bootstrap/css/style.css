@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: #74550e;
+}
+
+.header .header_top {
+  min-height: 80px;
+  background-color: darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header_top .logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.header .nav {
+  min-height: 80px;
+  background-color: darkgoldenrod;
+  margin: 15px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.header .nav .nav-link {
+  color: white;
+}
+
+.header .nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.block {
+  background-color: white;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.block h1 {
+  padding: 15px 0;
+  font-family: "Bubblegum Sans", cursive;
+  text-align: center;
+  color: darkgoldenrod;
+  font-size: 2rem;
+}
+
+.block hr {
+  padding: 15px 0;
+  border-top: 5px dotted darkgoldenrod;
+}
+
+.block .sections {
+  padding: 15px 0;
+}
+
+.block .sections > div > p {
+  background-color: darkgoldenrod;
+  margin: 10px 20px;
+  min-height: 200px;
+  font-size: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block h2 {
+  font-family: "Bubblegum Sans", cursive;
+  color: darkgoldenrod;
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.block .btn-primary {
+  background-color: darkgoldenrod;
+  border: none;
+}
+
+.block .btn-primary:hover {
+  background-color: white;
+  border: 1px solid darkgoldenrod;
+  color: darkgoldenrod;
+}
+
+.block .btn {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */

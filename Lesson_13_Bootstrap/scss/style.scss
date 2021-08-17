@@ -1,0 +1,99 @@
+@import 'reset';
+
+body {
+    background-color: rgb(116, 85, 14);
+}
+
+$indent: 15px 0;
+$main-color: darkgoldenrod; 
+$white: white;
+$main-font: 'Roboto', sans-serif;
+$decorative-font:'Bubblegum Sans', cursive;
+$font-lg: 1.3rem;
+
+.header {
+    .header_top {
+        min-height: 80px;
+        background-color:$main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            font-family: $main-font;
+            font-size: $font-lg;
+            color: $white;
+        }
+    }
+
+    .nav {
+        min-height: 80px;
+        background-color: $main-color;
+        margin: $indent;
+        justify-content: center;
+        align-items: center;
+        font-family: $decorative-font;
+        font-size: $font-lg;
+        color: $white;
+        .nav-link {
+            color: $white; 
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, .1);
+        }
+    }
+}
+
+.block {
+    background-color: $white;
+    min-height: 100vh;
+    padding: 50px;
+    h1 {
+        padding: $indent;
+        font-family: $decorative-font;
+        text-align: center;
+        color: $main-color;
+        font-size: 2rem;
+    }
+    hr {
+        padding: $indent;
+        border-top: 5px dotted $main-color;
+    }
+
+    .sections {
+        padding: $indent;
+    }
+
+    .sections > div > p {
+        background-color: $main-color;
+        margin: 10px 20px;
+        min-height: 200px;
+        font-size: 2rem;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-family: $decorative-font;
+        color: $main-color;
+        margin: $indent;
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        background-color:$main-color;
+        border: none;
+
+        &:hover {
+            background-color: $white;
+            border: 1px solid $main-color;
+            color: $main-color;
+        }
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+}
